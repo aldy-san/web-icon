@@ -42,7 +42,14 @@
             <script src="<?= base_url('assets/'); ?>js/sb-admin-2.min.js"></script>
 
 
-
+            <script>
+            $('.custom-file-input').on('change', function() {
+                //get the file name
+                var fileName = $(this).val().split('\\').pop();
+                //replace the "Choose a file" label
+                $(this).next('.custom-file-label').addClass("selected").html(fileName);
+            })
+            </script>
             </body>
 
             </html> 
