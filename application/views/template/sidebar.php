@@ -9,13 +9,24 @@
                 <div class="sidebar-brand-text mx-3">Home</div>
             </a>
 
+            <hr class="sidebar-divider">
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Profil
+            </div>
             <!-- Divider -->
+            <li class="nav-item">
+                <a class="nav-link" href="<?= base_url('user/edit'); ?>">
+                    <i class="fas fa-edit"></i>
+                    <span>Edit Profil</span>
+                </a>
+            </li>
             <hr class="sidebar-divider">
             <!-- Heading -->
             <div class="sidebar-heading">
                 Menu
             </div>
-
+            
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#Pengadaan"
